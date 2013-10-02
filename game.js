@@ -1,4 +1,5 @@
 // This is the regular Rock paper scissors game in Javascript - to be run in a browser.
+// It is the basis for later Sheldon Spock lizard Big bang theory edition of the game
 
 // a.) user makes a choice
 // b.) computer makes a choice
