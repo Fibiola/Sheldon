@@ -27,7 +27,7 @@ var computerChoice = Math.random();
 
 var combinations = function (choice1, choice2) {
     if (choice1 === choice2) {
-        return "You both chose " + choice1 + "." + "It's a tie!";
+        return "You both chose " + choice1 + ". " + "It's a tie!";
     }
     else {
         if (choice1 === "rock") {
@@ -59,39 +59,39 @@ var combinations = function (choice1, choice2) {
             else if (choice2 === "scissors") {
                 return "Scissors decapitates lizard! You win!";
             }
-            else {};
+            else {}
         }
 
         else if (choice1 === "spock") {
             if (choice2 === "rock") {
-                return "Spock vaporizes rock! Computer wins!"
+                return "Spock vaporizes rock! Computer wins!";
             }
             else if (choice2 === "lizard") {
-                return "Lizard poisons Spock! You win!"
+                return "Lizard poisons Spock! You win!";
             }
             else if (choice2 === "paper") {
-                return "Paper disproves Spock! You win!"
+                return "Paper disproves Spock! You win!";
             }
             else if (choice2 === "scissors") {
-                return "Spock smashes scissors! Computer wins!"
+                return "Spock smashes scissors! Computer wins!";
             }
-            else {};
+            else {}
         }
 
         else if (choice1 === "paper") {
             if (choice2 === "lizard") {
-                return "Lizard eats paper! You win!"
+                return "Lizard eats paper! You win!";
             }
             else if (choice2 === "rock") {
-                return "Paper covers rock! Computer wins!"
+                return "Paper covers rock! Computer wins!";
             }
             else if (choice2 === "spock") {
-                return "Paper disproves Spock! Computer wins!"
+                return "Paper disproves Spock! Computer wins!";
             }
             else if (choice2 === "scissors") {
-                return "Scissors cut paper! You win!"
+                return "Scissors cut paper! You win!";
             }
-            else {};
+            else {}
         }
         else if (choice1 === "scissors") {
             if(choice2 === "lizard") {
@@ -113,5 +113,9 @@ var combinations = function (choice1, choice2) {
     };
 
 // calling the function inputing computer and user choices as inputs.
-document.write(combinations(computerChoice, userChoice));
 
+document.write("You chose " + userChoice + ".");
+document.write("<br>");
+document.write("Computer chose " + computerChoice + ".");
+document.write("<br>");
+document.write(combinations(computerChoice, userChoice));
