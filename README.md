@@ -1,6 +1,10 @@
 # Operation Sheldon
 
-Rock paper scissors game Sheldon style. Just a little pet project of mine to work on :) 
+Rock paper scissors game Sheldon style.
+
+> Sheldon: "It's very simple. Scissors cuts paper, paper covers rock,rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and—as it always has—rock crushes scissors"
+
+Just a pet project to speed up javascript learning :)
 
 ## First phase: 
 Regular rock paper scissors game in javascript.
