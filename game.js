@@ -16,8 +16,8 @@ if (computerChoice < 0.33) {
 } else if (computerChoice > 0.66) {
     computerChoice = "paper";
 } else {
-    computerChoice = "scissors"
-};
+    computerChoice = "scissors";
+}
 
 
 
@@ -54,7 +54,7 @@ var compare = function (choice1, choice2) {
 };
 
 document.write(compare(userChoice, computerChoice) + "!" + " ");
-document.write("<br>")
+document.write("<br>");
 document.write("Computer chose" + " " + computerChoice + "!" + " ");
-document.write("<br>")
+document.write("<br>");
 document.write("You chose" + " " + userChoice + "!" + " ");
