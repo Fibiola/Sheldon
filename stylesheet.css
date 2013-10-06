@@ -1,10 +1,11 @@
 body {
     font-family: "Nobile";
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: gray;
     border: dashed;
+    padding-top:10px;
 }
 
 h1 {
@@ -12,10 +13,90 @@ h1 {
     font-size: 37px;
     text-align: center;
     color: black;
-
-
 }
 
 .koda {
+}
+
+.rock {
+float:left;
+width: 150;
+color: white;
+min-height: 150;
+max-height: 150;
+max-width: 200;
+border-radius: 30px;
+border: dashed black;
+margin-right: 10px;
+margin-left: 100px;
+background-color: #ACD1E9;
 
 }
+
+.rockgraphics {
+   float:left;
+   display:block;
+   width: 130px;
+   height: 120px;
+   background-color: white;
+   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+}
+
+
+.lizard {
+float:left;
+width: 150;
+color: white;
+min-height: 150;
+max-height: 150;
+max-width: 200;
+border-radius: 30px;
+border: dashed black;
+margin-right: 10px;
+margin-left: 100px;
+background-color: #ACD1E9;
+}
+
+.paper {
+float:left;
+width:150;
+color: white;
+min-height: 150;
+max-height: 150;
+max-width: 200;
+border-radius: 30px;
+border: dashed black;
+margin-right: 10px;
+margin-left: 100px;
+background-color: #ACD1E9;
+}
+
+.scissors {
+float: left;
+width: 150;
+color: white;
+min-height: 150;
+max-height: 150;
+max-width: 200;
+border-radius: 30px;
+border: dashed black;
+margin-right: 10px;
+margin-left: 100px;
+background-color: #ACD1E9;
+}
+
+.spock {
+float: left;
+width: 150;
+color: white;
+min-height: 150;
+max-height: 150;
+max-width: 200;
+border-radius: 30px;
+border: dashed black;
+margin-right: 10px;
+margin-left: 100px;
+background-color: #ACD1E9;
+}
+
