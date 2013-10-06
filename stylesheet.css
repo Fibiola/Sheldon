@@ -19,15 +19,16 @@ h1 {
 }
 
 .rock {
+padding: 5px;
 float:left;
 width: 150;
 color: white;
 min-height: 150;
 max-height: 150;
-max-width: 200;
+max-width: 150;
 border-radius: 30px;
 border: dashed black;
-margin-right: 10px;
+margin: 10px;
 margin-left: 100px;
 background-color: #ACD1E9;
 
@@ -36,8 +37,10 @@ background-color: #ACD1E9;
 .rockgraphics {
    float:left;
    display:block;
-   width: 130px;
-   height: 120px;
+      min-width: 120px;
+   min-height: 125px;
+   max-width: 120px;
+   max-height: 125px;
    background-color: white;
    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
@@ -45,6 +48,7 @@ background-color: #ACD1E9;
 
 
 .lizard {
+    padding: 5px;
 float:left;
 width: 150;
 color: white;
@@ -53,12 +57,13 @@ max-height: 150;
 max-width: 200;
 border-radius: 30px;
 border: dashed black;
-margin-right: 10px;
+margin: 10px;
 margin-left: 100px;
 background-color: #ACD1E9;
 }
 
 .paper {
+    padding: 5px;
 float:left;
 width:150;
 color: white;
@@ -67,12 +72,13 @@ max-height: 150;
 max-width: 200;
 border-radius: 30px;
 border: dashed black;
-margin-right: 10px;
+margin: 10px;
 margin-left: 100px;
 background-color: #ACD1E9;
 }
 
 .scissors {
+    padding: 5px;
 float: left;
 width: 150;
 color: white;
@@ -81,12 +87,13 @@ max-height: 150;
 max-width: 200;
 border-radius: 30px;
 border: dashed black;
-margin-right: 10px;
+margin: 10px;
 margin-left: 100px;
 background-color: #ACD1E9;
 }
 
 .spock {
+    padding: 5px;
 float: left;
 width: 150;
 color: white;
@@ -95,7 +102,7 @@ max-height: 150;
 max-width: 200;
 border-radius: 30px;
 border: dashed black;
-margin-right: 10px;
+margin: 10px;
 margin-left: 100px;
 background-color: #ACD1E9;
 }
