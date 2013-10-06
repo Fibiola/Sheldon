@@ -1,5 +1,5 @@
 body {
-    font-family: Open Sans;
+    font-family: "Nobile";
     font-size: 15px;
     font-weight: bold;
     text-align: center;
@@ -8,10 +8,11 @@ body {
 }
 
 h1 {
-    font font-family: Futura;
-    font-size: 20px;
+    font-family: "Raleway";
+    font-size: 37px;
     text-align: center;
     color: black;
+    text-shadow: 3px 2px 3px 4px #aaa
 
 }
 
