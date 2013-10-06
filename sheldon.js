@@ -5,14 +5,10 @@ rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors
 
 
 // a.) User makes a selection. We store it in a variable and turn it into lowercase.
-$(document).ready(function() {
-    $(".pull-me").click(function() {
-    $(".panel").slideToggle("slow");
 
 var userChoice = prompt("Make your choice: lizard, rock, spock, paper or scissors?").toLowerCase();
 
 
-});
 
 // b.) Computer randomly makes a selection
 var computerChoice = Math.random();
