@@ -1,4 +1,4 @@
-# Operation Sheldon
+# Operation Sheldon - ONLY WORKS ON CHROME!
 
 Rock paper scissors game Sheldon style.
 
@@ -18,3 +18,7 @@ Figuring out how to turn it into a web app, the entire UI, graphics, user experi
 Putting it all together, deploying it with Heroku.
 ## Sixth phase: (advanced, later stage):
 Make it so that game can be played among humans as well - not just AI vs. humans.
+### A.)
+Remote play - e-mail box where you get to write your e-mail address and pick your option. Also write mailbox for your friend that will than pick an option. As soon as you get both options, send e-mai l to both about who picked what and who won. 
+### B.)
+Real-time play - user gets link and waits for partner to join using the link. They they both pick. As soon as both pick they get result about who won.
