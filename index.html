@@ -12,24 +12,55 @@
 </head>
 
 <body>
-    <h1 class> Play a cool rock paper scissors game with your computer! <br>Excellent waste of time!</h1>
+    <h1 class> Play a cool rock paper scissors game with your computer! <br>Excellent waste of time!
+    </h1>
 
     <div class = "koda"> <script type="text/javascript" src="/scripts/sheldon.js"></script>
     </div>
     <br>
 
-    <div class = "rock hatch">ROCK
+    <div class = "rock hatch" onclick="combinations(computerChoice, 'rock')" src="/scripts/sheldon.js">ROCK
         <div class = "rockgraphics">
         </div>
     </div>
-    <div class = "lizard hatch">LIZARD</div>
-    <div class = "spock hatch">SPOCK</div>
-    <div class = "scissors hatch"> SCISSORS</div>
+
+    <div class = "lizard hatch">LIZARD
+        <div class = "lizardgraphics">
+        </div>
+    </div>
+
+    <div class = "spock hatch">SPOCK
+        <div class = "spockGraphics1">
+        </div>
+        <div class = "spockGraphics2">
+        </div>
+        <div class = "spockGraphics3">
+        </div>
+        <div class = "spockGraphics4">
+        </div>
+        <div class = "spockGraphics5">
+        </div>
+        <div class = "spockWrist">
+        </div>
+
+    </div>
+
+    <div class = "scissors hatch"> SCISSORS
+        <div class = "scissorGraphics">
+        </div>
+        <div class = "scissorGraphics2">
+        </div>
+        <div class = "infinity">
+        </div>
+    </div>
+
     <div class = "paper hatch">PAPER <br>
         <div class = "papergraphics">
+        </div>
     </div>
+
 </div>
-</div>
+
 <script>
     $('.rock, .lizard, .spock, .scissors, .paper').click(function() {
         $(this).addClass("bounce");
@@ -38,6 +69,5 @@
 </body>
 
 <footer>
-
 </footer>
 

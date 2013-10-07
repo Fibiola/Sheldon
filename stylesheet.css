@@ -42,6 +42,7 @@ visibility: hidden;
    min-height: 125px;
    max-width: 120px;
    max-height: 125px;
+   margin-left: 15px;
    background-color: white;
    -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
    border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
@@ -64,6 +65,9 @@ background-color: #AFABCE;
 visibility: hidden;
 }
 
+
+
+
 .paper {
     padding: 5px;
 float:left;
@@ -81,9 +85,10 @@ visibility: hidden;
 }
 
 .papergraphics {
+    margin-top: 5px;
     margin-left: 20px;
        width: 110px;
-   height: 100px;
+   height: 110px;
    background: white;
    /* Skew */
    -webkit-transform: skew(20deg);
@@ -108,6 +113,81 @@ background-color: #AFABCE;
 visibility: hidden;
 }
 
+.scissorGraphics{
+    margin-top: 25px;
+    margin-left: 13px;
+
+     height:13px;
+     width:80px;
+     border-radius: 90px 90px 0 0;
+     -moz-border-radius: 90px 90px 0 0;
+     -webkit-border-radius: 110px 90px 0 0;
+     background:white;
+     -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.scissorGraphics2{
+    margin-top: 5px;
+
+     height:13px;
+     width:80px;
+     border-radius: 0 0 90px 90px;
+     -moz-border-radius: 0 0 90px 90px;
+     -webkit-border-radius: 0 0 70px 90px;
+     background:white;
+     -webkit-transform: rotate(25deg);
+       -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+         -o-transform: rotate(25deg);
+            transform: rotate(25deg);
+}
+
+.infinity {
+    position: relative;
+    width: 150px;
+    height: 90px;
+}
+
+.infinity:before,
+.infinity:after {
+    content: "";
+    position: absolute;
+    top: 20;
+    left: 55;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-140deg);
+       -moz-transform: rotate(-140deg);
+        -ms-transform: rotate(-140deg);
+         -o-transform: rotate(-140deg);
+            transform: rotate(-140deg);
+}
+
+.infinity:after {
+    left: auto;
+    right: 0;
+     top: -15;
+    left: 80;
+    width: 50px;
+    height: 20px;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(25deg);
+       -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+         -o-transform: rotate(25deg);
+            transform: rotate(25deg);
+    border: 11px solid white;
+}
+
+
+
 .spock {
     padding: 5px;
 float: left;
@@ -122,6 +202,106 @@ margin: 10px;
 margin-left: 100px;
 background-color: #AFABCE;
 visibility: hidden;
+}
+
+.spockGraphics1 {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 30px;
+width: 13px;
+height: 60px;
+background: white;
+-moz-border-radius: 100px / 50px;
+-webkit-border-radius: 100px / 50px;
+border-radius: 100px / 50px;
+ -webkit-transform: rotate(-20deg);
+       -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+         -o-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+
+}
+
+.spockGraphics2 {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 10px;
+width: 14px;
+height: 70px;
+background: white;
+-moz-border-radius: 100px / 50px;
+-webkit-border-radius: 100px / 50px;
+border-radius: 100px / 50px;
+ -webkit-transform: rotate(-20deg);
+       -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+         -o-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+
+}
+
+.spockGraphics3 {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 8;
+width: 14px;
+height: 70px;
+background: white;
+-moz-border-radius: 100px / 50px;
+-webkit-border-radius: 100px / 50px;
+border-radius: 100px / 50px;
+        -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+            transform: rotate(20deg);
+
+}
+
+.spockGraphics4 {
+    position: absolute;
+    margin-left: 95px;
+    margin-top: 20px;
+width: 13px;
+height: 60px;
+background: white;
+-moz-border-radius: 100px / 50px;
+-webkit-border-radius: 100px / 50px;
+border-radius: 100px / 50px;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+            transform: rotate(20deg);
+
+}
+.spockGraphics5 {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 55px;
+width: 15px;
+height: 60px;
+background: white;
+
+     -moz-border-radius: 90 0 0 0;
+     -webkit-border-radius: 90 0 0 0;
+
+    -webkit-transform: rotate(50deg);
+       -moz-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+         -o-transform: rotate(50deg);
+            transform: rotate(50deg);
+}
+
+.spockWrist {
+    margin-top: 65px;
+    margin-left: 40px;
+    width: 60px;
+    height: 55px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
 }
 
 .cool {
