@@ -30,7 +30,8 @@ border-radius: 30px;
 border: dashed black;
 margin: 10px;
 margin-left: 100px;
-background-color: #ACD1E9;
+background-color: #AFABCE;
+visibility: hidden;
 
 }
 
@@ -59,7 +60,8 @@ border-radius: 30px;
 border: dashed black;
 margin: 10px;
 margin-left: 100px;
-background-color: #ACD1E9;
+background-color: #AFABCE;
+visibility: hidden;
 }
 
 .paper {
@@ -74,7 +76,20 @@ border-radius: 30px;
 border: dashed black;
 margin: 10px;
 margin-left: 100px;
-background-color: #ACD1E9;
+background-color: #AFABCE;
+visibility: hidden;
+}
+
+.papergraphics {
+    margin-left: 20px;
+       width: 110px;
+   height: 100px;
+   background: white;
+   /* Skew */
+   -webkit-transform: skew(20deg);
+   -moz-transform: skew(20deg);
+   -o-transform: skew(10deg);
+   transform: skew(10deg);
 }
 
 .scissors {
@@ -89,7 +104,8 @@ border-radius: 30px;
 border: dashed black;
 margin: 10px;
 margin-left: 100px;
-background-color: #ACD1E9;
+background-color: #AFABCE;
+visibility: hidden;
 }
 
 .spock {
@@ -104,7 +120,8 @@ border-radius: 30px;
 border: dashed black;
 margin: 10px;
 margin-left: 100px;
-background-color: #ACD1E9;
+background-color: #AFABCE;
+visibility: hidden;
 }
 
 .cool {
@@ -119,5 +136,7 @@ border-radius: 30px;
 border: dashed black;
 margin: 10px;
 margin-left: 100px;
-background-color: pink;
+background-color: #C1DAD6;
+visibility: hidden;
 }
+
