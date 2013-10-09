@@ -1,4 +1,4 @@
-# Operation Sheldon - ONLY WORKS ON CHROME!
+# Operation Sheldon - AS OF RIGHT NOW, SUPPORTED FOR CHROME and SAFARI!
 
 Rock paper scissors game Sheldon style.
 
@@ -17,7 +17,7 @@ Figuring out how to turn it into a web app, the entire UI, graphics, user experi
 ## Fourth phase B:
 Do the same in python. a.) javascript code -> python code, b.) add bootstrap for responsivness and Flask.
 ## Fifth phase: 
-Putting it all together, deploying it with Heroku.
+Putting it all together, deploying it with Heroku. Also make support for other browsers as well (at least Mozzilla and Safari)
 ## Sixth phase: (advanced, later stage):
 Make it so that game can be played among humans as well - not just AI vs. humans.
 ### A.)
