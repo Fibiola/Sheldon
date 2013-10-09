@@ -3,33 +3,41 @@
     <head>
         <title> Rock paper scissors! </title>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type = 'text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type='text/javascript' src='/scripts/jqscripts.js'> </script>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="stylesheet" type="text/css" href="/scripts/animations.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nobile">
+
 </head>
 
 <body>
-    <h1 class> Play a cool rock paper scissors game with your computer! <br>Excellent waste of time!
+<div class = "wrapper">
+    <h1 class> Play Rock, Paper, Scissors, Lizard, Spock. <br>Excellent waste of time!
     </h1>
-
-    <div class = "koda"> <script type="text/javascript" src="/scripts/sheldon.js"></script>
+    <br>
+    <div class = "koda"> <script type='text/javascript' src='/scripts/sheldon.js'> </script>
     </div>
     <br>
-
-    <div class = "rock hatch" onclick="combinations(computerChoice, 'rock')" src="/scripts/sheldon.js">ROCK
+    <br>
+    <div class = "rock hatch">ROCK
         <div class = "rockgraphics">
         </div>
     </div>
 
     <div class = "lizard hatch">LIZARD
-        <div class = "lizardgraphics">
+        <div class = "lizardGraphics">
+        </div>
+        <div class = "lizardGraphics1">
+        </div>
+        <div class = "lizardGraphics2">
+        </div>
+        <div class = "liardCircle">
         </div>
     </div>
 
-    <div class = "spock hatch">SPOCK
+    <div id = "rock" class = "spock hatch">SPOCK
         <div class = "spockGraphics1">
         </div>
         <div class = "spockGraphics2">
@@ -55,19 +63,25 @@
     </div>
 
     <div class = "paper hatch">PAPER <br>
-        <div class = "papergraphics">
+        <div class = "paperGraphics">
         </div>
     </div>
 
-</div>
 
-<script>
+
+<script type = "text/javascript">
     $('.rock, .lizard, .spock, .scissors, .paper').click(function() {
         $(this).addClass("bounce");
     });
 </script>
+<div class="push"></div>
+</div>
+        <div class="footer">
+            <p> 2013 (c) Natasha Pristovsek</p>
+        </div>
+
 </body>
 
-<footer>
-</footer>
+</html>
+
 

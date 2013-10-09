@@ -14,6 +14,8 @@ Regular rock paper scissors game in python (for excercise).
 Modifying the code to Big bang theory version of the game. 
 ## Fourth phase: 
 Figuring out how to turn it into a web app, the entire UI, graphics, user experience and adding of more features.
+## Fourth phase B:
+Do the same in python. a.) javascript code -> python code, b.) add bootstrap for responsivness and Flask.
 ## Fifth phase: 
 Putting it all together, deploying it with Heroku.
 ## Sixth phase: (advanced, later stage):

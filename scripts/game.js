@@ -19,8 +19,6 @@ if (computerChoice < 0.33) {
     computerChoice = "scissors";
 }
 
-
-
 // Function that takes two parameters - if both pick the same thing you get a tie message
 var compare = function (choice1, choice2) {
     if (choice1 == choice2) {

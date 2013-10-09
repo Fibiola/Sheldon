@@ -1,10 +1,16 @@
+html {
+  background: url(img/sarcasmgausian.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-    font-family: "Nobile";
-    font-size: 16px;
-    font-weight: bold;
+    font-family: "Raleway";
+    font-size: 17px;
     text-align: center;
-    color: gray;
-    border: dashed;
+    color: white;
     padding-top:10px;
 }
 
@@ -12,13 +18,31 @@ h1 {
     font-family: "Raleway";
     font-size: 37px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .koda {
+
+    height: 70px;
+    width:50%;
+    margin-left: 300px;
+    background: transparent;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 18px;
+    border-radius: 30px;
+/*
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.6);
+}
+*/
 }
 
+
 .rock {
+
 padding: 5px;
 float:left;
 width: 150;
@@ -27,25 +51,34 @@ min-height: 150;
 max-height: 150;
 max-width: 150;
 border-radius: 30px;
-border: dashed black;
-margin: 10px;
-margin-left: 100px;
-background-color: #AFABCE;
+margin: 40px;
+background-color: #212121;
 visibility: hidden;
+
 
 }
 
 .rockgraphics {
-   float:left;
-   display:block;
-      min-width: 120px;
-   min-height: 125px;
-   max-width: 120px;
-   max-height: 125px;
-   margin-left: 15px;
-   background-color: white;
-   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
-   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+    margin-left: 25px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    margin: 20px 0 50px 25;
+}
+.rockgraphics:after {
+
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
 }
 
 
@@ -54,22 +87,77 @@ visibility: hidden;
 float:left;
 width: 150;
 color: white;
-min-height: 150;
+min-height: 150px;
 max-height: 150;
-max-width: 200;
+max-width: 150;
 border-radius: 30px;
-border: dashed black;
-margin: 10px;
-margin-left: 100px;
-background-color: #AFABCE;
+margin: 40px;
+background-color: #212121;
 visibility: hidden;
+
+
 }
 
+.lizardGraphics {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+width: 30px;
+height: 45px;
+background: white;
+     -moz-border-radius: 90 20 0 0;
+     -webkit-border-radius: 90 20 0 0;
 
+    -webkit-transform: rotate(70deg);
+       -moz-transform: rotate(70deg);
+        -ms-transform: rotate(70deg);
+         -o-transform: rotate(70deg);
+            transform: rotate(70deg);
+}
 
+.lizardGraphics1 {
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 30px;
+width: 25px;
+height: 60px;
+background: white;
+
+     -moz-border-radius: 20 90 0 0;
+     -webkit-border-radius: 20 90 0 0;
+
+    -webkit-transform: rotate(95deg);
+       -moz-transform: rotate(95deg);
+        -ms-transform: rotate(95deg);
+         -o-transform: rotate(95deg);
+            transform: rotate(95deg);
+}
+.lizardGraphics2 {
+      position: absolute;
+    margin-left: 35px;
+    margin-top: 20px;
+width: 30px;
+height: 90px;
+background: white;
+
+     -moz-border-radius: 100 0 0 0;
+     -webkit-border-radius: 100 0 0 0;
+
+    -webkit-transform: rotate(10deg);
+       -moz-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+         -o-transform: rotate(10deg);
+            transform: rotate(10deg);
+}
+
+.lizardCircle3 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
 
 .paper {
-    padding: 5px;
+padding: 5px;
 float:left;
 width:150;
 color: white;
@@ -77,18 +165,17 @@ min-height: 150;
 max-height: 150;
 max-width: 200;
 border-radius: 30px;
-border: dashed black;
-margin: 10px;
-margin-left: 100px;
-background-color: #AFABCE;
+margin: 40px;
+background-color: #212121;
 visibility: hidden;
+
 }
 
-.papergraphics {
-    margin-top: 5px;
-    margin-left: 20px;
-       width: 110px;
-   height: 110px;
+.paperGraphics {
+    margin-top: 15px;
+    margin-left: 30px;
+       width: 90px;
+   height: 100px;
    background: white;
    /* Skew */
    -webkit-transform: skew(20deg);
@@ -106,10 +193,10 @@ min-height: 150;
 max-height: 150;
 max-width: 200;
 border-radius: 30px;
-border: dashed black;
-margin: 10px;
-margin-left: 100px;
-background-color: #AFABCE;
+margin: 40px;
+
+margin-bottom: 20;
+background-color: #212121;
 visibility: hidden;
 }
 
@@ -119,8 +206,8 @@ visibility: hidden;
 
      height:13px;
      width:80px;
-     border-radius: 90px 90px 0 0;
-     -moz-border-radius: 90px 90px 0 0;
+     border-radius: 110px 90px 0 0;
+     -moz-border-radius: 110px 90px 0 0;
      -webkit-border-radius: 110px 90px 0 0;
      background:white;
      -webkit-transform: rotate(45deg);
@@ -136,7 +223,7 @@ visibility: hidden;
      width:80px;
      border-radius: 0 0 90px 90px;
      -moz-border-radius: 0 0 90px 90px;
-     -webkit-border-radius: 0 0 70px 90px;
+     -webkit-border-radius: 0 0 90px 90px;
      background:white;
      -webkit-transform: rotate(25deg);
        -moz-transform: rotate(25deg);
@@ -197,23 +284,23 @@ min-height: 150;
 max-height: 150;
 max-width: 200;
 border-radius: 30px;
-border: dashed black;
-margin: 10px;
-margin-left: 100px;
-background-color: #AFABCE;
+margin: 40px;
+
+background-color: #212121;
 visibility: hidden;
+
 }
 
 .spockGraphics1 {
     position: absolute;
-    margin-left: 35px;
+    margin-left: 41px;
     margin-top: 30px;
 width: 13px;
-height: 60px;
+height: 50px;
 background: white;
--moz-border-radius: 100px / 50px;
--webkit-border-radius: 100px / 50px;
-border-radius: 100px / 50px;
+-moz-border-radius: 40px / 50px;
+-webkit-border-radius: 40px / 50px;
+border-radius: 50px / 50px;
  -webkit-transform: rotate(-20deg);
        -moz-transform: rotate(-20deg);
         -ms-transform: rotate(-20deg);
@@ -224,14 +311,14 @@ border-radius: 100px / 50px;
 
 .spockGraphics2 {
     position: absolute;
-    margin-left: 45px;
+    margin-left: 53px;
     margin-top: 10px;
 width: 14px;
 height: 70px;
 background: white;
 -moz-border-radius: 100px / 50px;
 -webkit-border-radius: 100px / 50px;
-border-radius: 100px / 50px;
+border-radius: 50px / 50px;
  -webkit-transform: rotate(-20deg);
        -moz-transform: rotate(-20deg);
         -ms-transform: rotate(-20deg);
@@ -242,14 +329,14 @@ border-radius: 100px / 50px;
 
 .spockGraphics3 {
     position: absolute;
-    margin-left: 80px;
+    margin-left: 82px;
     margin-top: 8;
 width: 14px;
 height: 70px;
 background: white;
 -moz-border-radius: 100px / 50px;
 -webkit-border-radius: 100px / 50px;
-border-radius: 100px / 50px;
+border-radius: 50px / 50px;
         -webkit-transform: rotate(20deg);
        -moz-transform: rotate(20deg);
         -ms-transform: rotate(20deg);
@@ -260,14 +347,14 @@ border-radius: 100px / 50px;
 
 .spockGraphics4 {
     position: absolute;
-    margin-left: 95px;
+    margin-left: 96px;
     margin-top: 20px;
 width: 13px;
 height: 60px;
 background: white;
 -moz-border-radius: 100px / 50px;
 -webkit-border-radius: 100px / 50px;
-border-radius: 100px / 50px;
+border-radius: 50px / 50px;
     -webkit-transform: rotate(20deg);
        -moz-transform: rotate(20deg);
         -ms-transform: rotate(20deg);
@@ -277,7 +364,7 @@ border-radius: 100px / 50px;
 }
 .spockGraphics5 {
     position: absolute;
-    margin-left: 100px;
+    margin-left: 105px;
     margin-top: 55px;
 width: 15px;
 height: 60px;
@@ -294,14 +381,14 @@ background: white;
 }
 
 .spockWrist {
-    margin-top: 65px;
-    margin-left: 40px;
-    width: 60px;
+    margin-top: 60px;
+    margin-left: 47px;
+    width: 57px;
     height: 55px;
     background: white;
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
-    border-radius: 100px / 50px;
+    border-radius: 30px / 55px;
 }
 
 .cool {
@@ -313,10 +400,33 @@ min-height: 150;
 max-height: 150;
 max-width: 200;
 border-radius: 30px;
-border: dashed black;
-margin: 10px;
-margin-left: 100px;
-background-color: #C1DAD6;
+background: #55C7B7;
+
 visibility: hidden;
 }
+/* Fallback for web browsers that doesn't support RGBa
+background: rgb(0, 0, 0);
+ RGBa with 0.6 opacity
+background: rgba(2, 0, 0, 0.6);
+}
+*/
 
+
+* {
+margin: 0;
+}
+
+html, body {
+height: 100%;
+}
+
+.wrapper {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -4em;
+}
+
+.footer, .push {
+height: 4em;
+}

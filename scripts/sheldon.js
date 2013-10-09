@@ -45,7 +45,9 @@ var combinations = function (choice1, choice2) {
             else if (choice2 === "scissors"){
                 return "Rock crushes scissors! Computer wins!";
             }
-            else {}
+            else {
+                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
+            }
         }
 
         else if (choice1 === "lizard") {
@@ -61,7 +63,9 @@ var combinations = function (choice1, choice2) {
             else if (choice2 === "scissors") {
                 return "Scissors decapitates lizard! You win!";
             }
-            else {}
+            else {
+                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
+            }
         }
 
         else if (choice1 === "spock") {
@@ -77,7 +81,9 @@ var combinations = function (choice1, choice2) {
             else if (choice2 === "scissors") {
                 return "Spock smashes scissors! Computer wins!";
             }
-            else {}
+            else {
+                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
+            }
         }
 
         else if (choice1 === "paper") {
@@ -93,7 +99,9 @@ var combinations = function (choice1, choice2) {
             else if (choice2 === "scissors") {
                 return "Scissors cut paper! You win!";
             }
-            else {}
+            else {
+                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
+            }
         }
         else if (choice1 === "scissors") {
             if(choice2 === "lizard") {
@@ -108,13 +116,18 @@ var combinations = function (choice1, choice2) {
             else if (choice2 === "paper") {
                 return "Scissors cuts paper! Computer wins!";
             }
-            else {}
+            else {
+                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
+            }
         }
-        else {}
+        else {
+        return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input !";
+        }
         }
     };
 
 // calling the function inputing computer and user choices as inputs.
+
 
 document.write("You chose " + userChoice + ".");
 document.write("<br>");
