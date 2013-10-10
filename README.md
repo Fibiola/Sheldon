@@ -5,6 +5,7 @@ Rock paper scissors game Sheldon style.
 > Sheldon: "It's very simple. Scissors cuts paper, paper covers rock,rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and—as it always has—rock crushes scissors"
 
 Just a pet project to speed up my javascript learning process :)
+![My image](fibiola.github.com/Sheldon/img/screenshot.jpg)
 
 ## First phase: 
 Regular rock paper scissors game in javascript.
