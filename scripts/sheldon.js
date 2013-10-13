@@ -28,21 +28,21 @@ var computerChoice = Math.random();
 
 var combinations = function (choice1, choice2) {
     if (choice1 === choice2) {
-        return "You both chose " + choice1 + ". " + "It's a tie!";
+        return "<br>You both chose " + choice1 + ". " + "<br>It's a tie!<br>";
     }
     else {
         if (choice1 === "rock") {
             if (choice2 === "lizard") {
-                return "Computer chose rock. You chose lizard. <br> Rock crushes lizard! Computer wins!";
+                return "Computer chose rock. <br> You chose lizard. <br> Rock crushes lizard! <br> Computer wins!";
             }
             else if (choice2 === "spock"){
-                return "Spock vaporizes rock. You win!";
+                return "Computer chose rock. <br> You chose Spock. <br> Spock vaporizes rock.<br> You win!";
             }
             else if (choice2 === "paper") {
-                return "Paper covers rock! You win!";
+                return "Computer chose rock. <br> You chose paper. <br> Paper covers rock!<br> You win!";
             }
             else if (choice2 === "scissors"){
-                return "Rock crushes scissors! Computer wins!";
+                return "Computer chose rock. <br> You chose scissors. <br> Rock crushes scissors! <br> Computer wins!";
             }
             else {
                 return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
@@ -51,34 +51,34 @@ var combinations = function (choice1, choice2) {
 
         else if (choice1 === "lizard") {
             if (choice2 === "rock") {
-                return "Rock crushes lizard! You win!";
+                return "Computer chose lizard. <br> You chose rock. <br> Rock crushes lizard!<br> You win!";
             }
             else if (choice2 === "spock") {
-                return "Lizard poisons Spock! Computer wins!";
+                return "Computer chose lizard. <br> You chose Spock. <br> Lizard poisons Spock! <br> Computer wins!";
             }
             else if (choice2 === "paper") {
-                return "Lizard eats paper! Computer wins!";
+                return "Computer chose lizard. <br> You chose paper. <br> Lizard eats paper! <br> Computer wins!";
             }
             else if (choice2 === "scissors") {
-                return "Scissors decapitates lizard! You win!";
+                return "Computer chose lizard. <br> You chose scissors. <br> Scissors decapitates lizard!<br> You win!";
             }
             else {
-                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
+                return "Computer chose lizard. <br> You chose The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
             }
         }
 
         else if (choice1 === "spock") {
             if (choice2 === "rock") {
-                return "Computer chose Spock. You chose rock. Spock vaporizes rock! Computer wins!";
+                return "Computer chose Spock. <br> You chose rock.<br> Spock vaporizes rock!<br> Computer wins!";
             }
             else if (choice2 === "lizard") {
-                return "Computer chose Spock. You chose Lizard. Lizard poisons Spock! You win!";
+                return "Computer chose Spock.<br> You chose Lizard. <br>Lizard poisons Spock!<br> You win!";
             }
             else if (choice2 === "paper") {
-                return "Computer chose Spock. You chose paper. Paper disproves Spock! You win!";
+                return "Computer chose Spock.<br> You chose paper. <br>Paper disproves Spock!<br> You win!";
             }
             else if (choice2 === "scissors") {
-                return "You choseSpock smashes scissors! Computer wins!";
+                return "Computer chose Spock. <br> You chose scissors. <br> Spock smashes scissors!<br> Computer wins!";
             }
             else {
                 return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
@@ -87,37 +87,34 @@ var combinations = function (choice1, choice2) {
 
         else if (choice1 === "paper") {
             if (choice2 === "lizard") {
-                return "Lizard eats paper! You win!";
+                return "Computer chose paper. <br> You chose lizard. <br>Lizard eats paper!<br> You win!";
             }
             else if (choice2 === "rock") {
-                return "Paper covers rock! Computer wins!";
+                return "Computer chose paper. <br> You chose rock. <br>Paper covers rock!<br>Computer wins!";
             }
             else if (choice2 === "spock") {
-                return "Paper disproves Spock! Computer wins!";
+                return "Computer chose paper. <br> You chose spock. <br>Paper disproves Spock!<br>Computer wins!";
             }
             else if (choice2 === "scissors") {
-                return "Scissors cut paper! You win!";
+                return "Computer chose paper. <br> You chose scissors. <br>Scissors cut paper!<br>You win!";
             }
             else {
-                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
             }
         }
         else if (choice1 === "scissors") {
             if(choice2 === "lizard") {
-                return "Scissors decapitates lizard! Computer wins!";
+                return "Computer chose scissors.<br> You chose lizard.<br> Scissors decapitates lizard!<br> Computer wins!";
             }
             else if (choice2 === "rock") {
-                return "Rock crushes scissors! You win!";
+                return "Computer chose scissors.<br> You chose rock.<br> Rock crushes scissors!<br> You win!";
             }
             else if (choice2 === "spock") {
-                return "Spock smashes scissors! You win!";
+                return "Computer chose scissors.<br> You chose Spock.<br> Spock smashes scissors!<br> You win!";
             }
             else if (choice2 === "paper") {
-                return "Scissors cuts paper! Computer wins!";
+                return "Computer chose scissors.<br> You chose paper.<br> Scissors cuts paper!<br> Computer wins!";
             }
-            else {
-                return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
-            }
+
         }
         else {
         return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input !";
@@ -144,7 +141,8 @@ var rockPressed = function() {
 };
 
 var resetPressed = function() {
-    document.getElementById("besedilo").innerHTML = "Make a new selection!";
+    document.getElementById("besedilo").innerHTML = "<div class='newSelection'> Make a new selection!</div>";
+    //tukej morem rečt da zbriše jquery script ki obarva element
     inGame = true;
 };
 

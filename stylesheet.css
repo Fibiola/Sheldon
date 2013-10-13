@@ -9,8 +9,8 @@ body {
     font-size: 95.5%;
     font-family: "Raleway";
     line-height: 1.5;
-    text-align: center;
-    padding-top: 1.5%;
+    text-align: left;
+    padding-top: 0.5%;
 }
 
 /*0 auto means center. if we set 70% of width we get space */
@@ -19,6 +19,7 @@ or right side; */
 
 .mainHeader {
     color:white;
+    width: 100%;
 }
 
 a {
@@ -34,27 +35,42 @@ a {
 .koda {
     margin: 0 auto;
     padding: 10px;
-    width: 60%;
+    width: 50%;
     height:100%;
-    min-height: 110px;
+    min-height: 170px;
     font-size: 110%;
     border-radius: 20px;
-    background-color:rgba(0, 0, 0, 0.4)
+    background-color:rgba(0, 0, 0, 0.4);
+    text-align: center;
 
 }
 
-.mainContent {
-    margin-top: 10px;
-
-}
 h1 {
-    margin-top: 10px;
-}
-h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    color: black;
+    margin-bottom: 8px;
 }
 
+h3 {
+    color: white;
+    font-weight: 100;
+}
+
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size:125%;
+}
+
+.mainHeader {
+    color:black;
+    font-size: 90px;
+    display: inline-block;
+    font-size: 350%;
+}
 
 .rock {
     float: left;
@@ -372,10 +388,11 @@ h2 {
 }
 
 .click {
-    width: 160px;
+    width: 155px;
+    height:155px;
     color: white;
     border-radius: 20px;
-    background: #52C6C7;
+    background-color:rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -394,8 +411,9 @@ html, body {
 }
 
 .footer, .push {
-    height: 6em;
+    height: 2em;
     clear:both;
+    text-align: center;
 }
 
 .button {
@@ -425,6 +443,7 @@ html, body {
 .selection {
     min-width: 20px;
     clear:both;
+    text-align: center;
 }
 
 .declare {
@@ -435,6 +454,16 @@ html, body {
 }
 
 .push2 {
-    height: 1em;
+    height: 0.1em;
     clear:both;
+}
+
+.newSelection {
+    padding-top: 30px;
+    font-size: 130%;
+}
+
+.quote {
+    text-align: justify;
+    height: auto;
 }
