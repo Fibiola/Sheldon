@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $('.rock, .paper, .lizard, .scissors, .spock').hover(function() {
-        $(this).toggleClass('cool');
+        $(this).toggleClass('hover');
+     $('.button').hover(function() {
+        $(this).toggleClass('hoverButton');
     });
 });
-
+});

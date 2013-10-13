@@ -6,8 +6,7 @@ rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors
 
 // a.) User makes a selection. We store it in a variable and turn it into lowercase.
 
-var userChoice = prompt("Make your choice: lizard, rock, spock, paper or scissors?").toLowerCase();
-
+/*var userChoice = prompt("Make your choice: lizard, rock, spock, paper or scissors?").toLowerCase(); */
 
 
 // b.) Computer randomly makes a selection
@@ -34,7 +33,7 @@ var combinations = function (choice1, choice2) {
     else {
         if (choice1 === "rock") {
             if (choice2 === "lizard") {
-                return "Rock crushes lizard! Computer wins!";
+                return "Computer chose rock. You chose lizard. <br> Rock crushes lizard! Computer wins!";
             }
             else if (choice2 === "spock"){
                 return "Spock vaporizes rock. You win!";
@@ -70,16 +69,16 @@ var combinations = function (choice1, choice2) {
 
         else if (choice1 === "spock") {
             if (choice2 === "rock") {
-                return "Spock vaporizes rock! Computer wins!";
+                return "Computer chose Spock. You chose rock. Spock vaporizes rock! Computer wins!";
             }
             else if (choice2 === "lizard") {
-                return "Lizard poisons Spock! You win!";
+                return "Computer chose Spock. You chose Lizard. Lizard poisons Spock! You win!";
             }
             else if (choice2 === "paper") {
-                return "Paper disproves Spock! You win!";
+                return "Computer chose Spock. You chose paper. Paper disproves Spock! You win!";
             }
             else if (choice2 === "scissors") {
-                return "Spock smashes scissors! Computer wins!";
+                return "You choseSpock smashes scissors! Computer wins!";
             }
             else {
                 return "The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";
@@ -129,8 +128,55 @@ var combinations = function (choice1, choice2) {
 // calling the function inputing computer and user choices as inputs.
 
 
-document.write("You chose " + userChoice + ".");
-document.write("<br>");
-document.write("Computer chose " + computerChoice + ".");
-document.write("<br>");
-document.write(combinations(computerChoice, userChoice));
+
+var inGame = true;
+
+// Variable that stores function when user presses the button. inGame thing is used so user can't pick again once he already made his
+//selection.
+var rockPressed = function() {
+    if (!inGame) return;
+    var result = combinations(computerChoice, "rock");
+    inGame = false;
+    document.getElementById("besedilo").innerHTML = result + "<br><div class='button' onClick='resetPressed()'><p>Play again!</p> </div>";
+    document.getElementById("declaration").innerHTML = "<br><div class ='declare'>Computer chose " + computerChoice;
+    document.getElementById("declaration").innerHTML = "<br><div class ='declare'>You chose rock";
+
+};
+
+var resetPressed = function() {
+    document.getElementById("besedilo").innerHTML = "Make a new selection!";
+    inGame = true;
+};
+
+var lizardPressed = function() {
+    if (!inGame) return;
+    var result = combinations(computerChoice, "lizard");
+    inGame = false;
+    document.getElementById("besedilo").innerHTML = result + "<br> <div class='button' onClick='resetPressed()'><p>Play again!</p> </div>";
+    document.getElementById("declaration").innerHTML = "<br><div class ='declare'>blala";
+};
+
+var paperPressed = function() {
+    if (!inGame) return;
+    var result = combinations(computerChoice, "paper");
+    inGame = false;
+    document.getElementById("besedilo").innerHTML = result + "<br><div class='button' onClick='resetPressed()'><p>Play again!</p> </div>";
+    document.getElementById("declaration").innerHTML = "<br><div class ='declare'>blala";
+};
+
+var scissorsPressed = function() {
+    if (!inGame) return;
+    var result = combinations(computerChoice, "scissors");
+    inGame = false;
+    document.getElementById("besedilo").innerHTML = result + "<br><div class = 'button' onClick='resetPressed()'><p>Play again!</p> </div>";
+    document.getElementById("declaration").innerHTML = "<br><div class ='declare'>blala";
+};
+
+var spockPressed = function() {
+    if (!inGame) return;
+    var result = combinations(computerChoice, "spock");
+    inGame = false;
+    document.getElementById("besedilo").innerHTML = result + "<br><div class = 'button' onClick='resetPressed()'> <p>Play again!</p> </div>";
+    document.getElementById("declaration").innerHTML = "<br><div class ='declare'> blala";
+ };
+
