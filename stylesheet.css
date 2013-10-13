@@ -58,7 +58,7 @@ h3 {
 
 h2 {
     text-align: center;
-    color: white;
+    color: black;
     font-weight: 100;
     margin-top: 10px;
     margin-bottom: 40px;
@@ -73,10 +73,11 @@ h2 {
 }
 
 .rock {
+    padding: 5px;
     float: left;
     color: white;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     margin: 20px;
     border-radius: 20px;
     background-color: #212121;
@@ -106,9 +107,10 @@ h2 {
 }
 
 .lizard {
+    padding: 5px;
     float:left;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     color: white;
     border-radius: 20px;
     background-color: #212121;
@@ -170,9 +172,10 @@ h2 {
 }
 
 .paper {
+    padding: 5px;
     float:left;
-    width:160px;
-    height: 160px;
+    width:150px;
+    height: 150px;
     color: white;
     border-radius: 20px;
     margin: 20px;
@@ -193,9 +196,10 @@ h2 {
 }
 
 .scissors {
+    padding: 5px;
     float: left;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     color: white;
     border-radius: 20px;
     margin: 20px;
@@ -274,10 +278,11 @@ h2 {
 }
 
 .spock {
+    padding: 5px;
     float: left;
     color: white;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 20px;
     margin: 20px;
     background-color: #212121;
@@ -380,8 +385,8 @@ h2 {
 
 .hover {
     float: left;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     color: white;
     border-radius: 20px;
     background: #55C7B7;
@@ -414,6 +419,9 @@ html, body {
     height: 2em;
     clear:both;
     text-align: center;
+    font-size: 130%;
+    font-weight: 100;
+    color:black;
 }
 
 .button {
@@ -466,4 +474,5 @@ html, body {
 .quote {
     text-align: justify;
     height: auto;
+    margin:15px;
 }
