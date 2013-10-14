@@ -106,6 +106,31 @@ h2 {
     border-width: 70px 50px 0 50px;
 }
 
+.rockGraphicsTitle {
+    margin: 0 auto;
+    border-style: solid;
+    margin-left: 200px;
+    position: absolute;
+    border-color: transparent transparent white transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    margin: 20px 20px 30px 700px;
+}
+
+.rockGraphicsTitle:after {
+    content: "";
+    position: absolute;
+    display: inline;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
 .lizard {
     padding: 5px;
     float:left;
@@ -195,6 +220,7 @@ h2 {
     transform: skew(10deg);
 }
 
+/*scissors*/
 .scissors {
     padding: 5px;
     float: left;
@@ -276,6 +302,86 @@ h2 {
     -o-transform: rotate(25deg);
     transform: rotate(25deg);
 }
+
+/*title scissors
+
+.scissorsTitle {
+    margin-top: 25px;
+    margin-left: 13px;
+    height:13px;
+    width:80px;
+    border-radius: 110px 90px 0 0;
+    position: absolute;
+    margin-left: 720px;
+    -moz-border-radius: 110px 90px 0 0;
+    -webkit-border-radius: 110px 90px 0 0;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.scissorsTitle2 {
+    margin-top: 5px;
+    height: 13px;
+    width: 80px;
+    position: absolute;
+    margin-left: 720px;
+    background:white;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.infinityTitle {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+}
+
+.infinityTitle:before,
+.infinityTitle:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 0 50px;
+    -webkit-border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+}
+
+.infinityTitle:after {
+    left: auto;
+    right: 0px;
+    top: -15px;
+    left: 80px;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 50px 0;
+    -webkit-border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+*/
+/*spock*/
+
 
 .spock {
     padding: 5px;
@@ -393,9 +499,8 @@ h2 {
 }
 
 .click {
-    width: 155px;
-    height:155px;
-    color: white;
+    width: 150px;
+    height:150px;
     border-radius: 20px;
     background-color:rgba(0, 0, 0, 0.4);
 }

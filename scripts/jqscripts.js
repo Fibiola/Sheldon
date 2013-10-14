@@ -3,7 +3,7 @@ $(document).ready(function() {
         $(this).toggleClass('hover');
      $('.button').hover(function() {
         $(this).toggleClass('hoverButton');
-    $('.rock, .paper, .lizard, .scissors, .spock').onClick(function() {
+    $('.rock, .paper, .lizard, .scissors, .spock').click(function() {
         $(this).toggleClass('click');
     });
 
