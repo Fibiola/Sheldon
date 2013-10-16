@@ -52,16 +52,16 @@ var combinations = function (choice1, choice2) {
 
         else if (choice1 === "lizard") {
             if (choice2 === "rock") {
-                return "Computer chose lizard. <br> You chose rock. <br> Rock crushes lizard!<br> You win!";
+                return "Computer chose lizard. <br> You chose rock. <br> Rock crushes lizard!<br> <strong>You win!";
             }
             else if (choice2 === "spock") {
-                return "Computer chose lizard. <br> You chose Spock. <br> Lizard poisons Spock! <br> Computer wins!";
+                return "Computer chose lizard. <br> You chose Spock. <br> Lizard poisons Spock! <br> <strong>Computer wins!";
             }
             else if (choice2 === "paper") {
-                return "Computer chose lizard. <br> You chose paper. <br> Lizard eats paper! <br> Computer wins!";
+                return "Computer chose lizard. <br> You chose paper. <br> Lizard eats paper! <br> <strong>Computer wins!";
             }
             else if (choice2 === "scissors") {
-                return "Computer chose lizard. <br> You chose scissors. <br> Scissors decapitates lizard!<br> You win!";
+                return "Computer chose lizard. <br> You chose scissors. <br> Scissors decapitates lizard!<br><strong> You win!";
             }
             else {
                 return "Computer chose lizard. <br> You chose The game is not called Rock, paper, scissors, spock, lizard and " + choice2 + ". Give a valid input :) !";

@@ -1,0 +1,96 @@
+body {
+    background: url(/img/sarcasmgausian.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 300%;
+    font-family: "Raleway";
+    color:white;
+    text-align: center;
+    padding-top: 5%;
+    width: 100%;
+        line-height: 1.5;
+    margin: 0 auto;
+}
+
+input[type="button"] {
+    color: white;
+    font-family:"Raleway";
+    border-radius: 20px;
+    border:0;
+    padding: 10px;
+    font-size: 80%;
+    background-color: white;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.content {
+
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+    background-color: rgba(0, 0, 10, 0.5);
+    font-weight: lighter;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -moz-border-radius: 50px 50px 0 50px;
+    -webkit-border-radius: 50px 50px 0px 0px;
+
+
+}
+h1 {
+    font-size: 100%;
+    padding: 10px;
+    font-family: "Raleway";
+    font-weight: lighter;
+}
+
+.content2 {
+
+    width: 100%;
+    font-family: "Raleway";
+    margin:0 auto;
+    background:rgba(255,255,255, 0.3);
+    font-weight: lighter;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+    -moz-border-radius: 50px 0px 0 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+
+}
+
+h2 {
+    font-size: 60%;
+    color: black;
+    font-family: "Raleway";
+    font-weight: lighter;
+    padding: 10px;
+}
+
+.a:hover {
+    color: pink;
+    }
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+.button {
+    margin: -3em auto;
+}
+

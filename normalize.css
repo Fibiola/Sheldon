@@ -1,0 +1,584 @@
+/* base font size is 14px. We set 87.5% of the font size */
+body {
+    background: url(img/sarcasmgausian.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:white;
+    font-size: 95.5%;
+    font-family: "Raleway";
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 0.5%;
+}
+
+/*0 auto means center. if we set 70% of width we get space */
+/*clear:both makes your container such that no floating elements are left
+or right side; */
+
+.mainHeader {
+    color:white;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    margin: 0 auto;
+    width: 80%;
+    clear:both;
+}
+
+.koda {
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    height:100%;
+    min-height: 170px;
+    font-size: 110%;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
+    text-align: center;
+
+}
+
+h1 {
+    color: black;
+    margin-bottom: 8px;
+}
+
+h3 {
+    color: white;
+    font-weight: 100;
+}
+
+
+h2 {
+    text-align: center;
+    color: black;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size:125%;
+}
+
+.mainHeader {
+    color:black;
+    font-size: 90px;
+    display: inline-block;
+    font-size: 350%;
+}
+
+.rock {
+    padding: 5px;
+    float: left;
+    color: white;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #212121;
+}
+
+.rockGraphics {
+    margin-left: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    position: relative;
+    margin: 20px 20px 50px 30px;
+}
+
+.rockGraphics:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+.rockGraphicsTitle {
+    margin: 0 auto;
+    border-style: solid;
+    margin-left: 200px;
+    position: absolute;
+    border-color: transparent transparent white transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    margin: 20px 20px 30px 700px;
+}
+
+.rockGraphicsTitle:after {
+    content: "";
+    position: absolute;
+    display: inline;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+}
+
+.lizard {
+    padding: 5px;
+    float:left;
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 20px;
+    background-color: #212121;
+    margin: 20px;
+}
+
+.lizardGraphics {
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 30px;
+    height: 45px;
+    background: white;
+    -moz-border-radius: 100px 30px 30px 0;
+    -webkit-border-radius: 100px 30px 30px 0;
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    transform: rotate(70deg);
+}
+
+.lizardGraphics1 {
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 30px;
+    width: 25px;
+    height: 60px;
+    background: white;
+    -moz-border-radius: 20px 90px 0 0;
+    -webkit-border-radius: 20px 90px 0 0;
+    -webkit-transform: rotate(95deg);
+    -moz-transform: rotate(95deg);
+    -ms-transform: rotate(95deg);
+    -o-transform: rotate(95deg);
+    transform: rotate(95deg);
+}
+
+.lizardGraphics2 {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 20px;
+    width: 30px;
+    height: 90px;
+    background: white;
+    -moz-border-radius: 100px 0 0 0;
+    -webkit-border-radius: 100px 0 0 0;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.lizardCircle3 {
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+.paper {
+    padding: 5px;
+    float:left;
+    width:150px;
+    height: 150px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #212121;
+}
+
+.paperGraphics {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 90px;
+    height: 100px;
+    background: white;
+   /* Skew */
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+}
+
+/*scissors*/
+.scissors {
+    padding: 5px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #212121;
+}
+
+.scissorGraphics{
+    margin-top: 25px;
+    margin-left: 13px;
+    height:13px;
+    width:80px;
+    border-radius: 110px 90px 0 0;
+    -moz-border-radius: 110px 90px 0 0;
+    -webkit-border-radius: 110px 90px 0 0;
+    background:white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.scissorGraphics2{
+    margin-top: 5px;
+    height: 13px;
+    width: 80px;
+    background:white;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.infinity {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+}
+
+.infinity:before,
+.infinity:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 0 50px;
+    -webkit-border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+}
+
+.infinity:after {
+    left: auto;
+    right: 0px;
+    top: -15px;
+    left: 80px;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 50px 0;
+    -webkit-border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+/*title scissors
+
+.scissorsTitle {
+    margin-top: 25px;
+    margin-left: 13px;
+    height:13px;
+    width:80px;
+    border-radius: 110px 90px 0 0;
+    position: absolute;
+    margin-left: 720px;
+    -moz-border-radius: 110px 90px 0 0;
+    -webkit-border-radius: 110px 90px 0 0;
+    background: white;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.scissorsTitle2 {
+    margin-top: 5px;
+    height: 13px;
+    width: 80px;
+    position: absolute;
+    margin-left: 720px;
+    background:white;
+    -moz-border-radius: 0 0 90px 90px;
+    -webkit-border-radius: 0 0 90px 90px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.infinityTitle {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+}
+
+.infinityTitle:before,
+.infinityTitle:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 55px;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 0 50px;
+    -webkit-border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+}
+
+.infinityTitle:after {
+    left: auto;
+    right: 0px;
+    top: -15px;
+    left: 80px;
+    width: 50px;
+    height: 20px;
+    border: 11px solid white;
+    -moz-border-radius: 50px 50px 50px 0;
+    -webkit-border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+*/
+/*spock*/
+
+
+.spock {
+    padding: 5px;
+    float: left;
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #212121;
+}
+
+.spockGraphics1 {
+    position: absolute;
+    margin-left: 41px;
+    margin-top: 30px;
+    width: 13px;
+    height: 50px;
+    background: white;
+    -moz-border-radius: 40px / 50px;
+    -webkit-border-radius: 40px / 50px;
+    border-radius: 50px / 50px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.spockGraphics2 {
+    position: absolute;
+    margin-left: 53px;
+    margin-top: 10px;
+    width: 14px;
+    height: 70px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 50px / 50px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+
+.spockGraphics3 {
+    position: absolute;
+    margin-left: 82px;
+    margin-top: 8px;
+    width: 14px;
+    height: 70px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 50px / 50px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.spockGraphics4 {
+    position: absolute;
+    margin-left: 96px;
+    margin-top: 20px;
+    width: 13px;
+    height: 60px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 50px / 50px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.spockGraphics5 {
+    position: absolute;
+    margin-left: 105px;
+    margin-top: 55px;
+    width: 15px;
+    height: 60px;
+    background: white;
+    -moz-border-radius: 90px 0 0 0;
+    -webkit-border-radius: 90px 0 0 0;
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.spockWrist {
+    margin-top: 60px;
+    margin-left: 47px;
+    width: 57px;
+    height: 55px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 30px / 55px;
+}
+
+.hover {
+    float: left;
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 20px;
+    background: #55C7B7;
+}
+
+.click {
+    width: 150px;
+    height:150px;
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 80%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4em;
+}
+
+.footer, .push {
+    height: 2em;
+    clear:both;
+    text-align: center;
+    font-size: 130%;
+    font-weight: 100;
+    color:black;
+}
+
+.button {
+    padding:3px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: black;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.button p {
+    padding:2px;
+}
+
+.hoverButton {
+    background: #55C7B7;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+
+    text-align: center;
+    margin: 10px auto;
+}
+
+.selection {
+    min-width: 20px;
+    clear:both;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.declare {
+    width: 100px;
+    height: 40px;
+    margin: auto;
+
+}
+
+.push2 {
+    height: 0.1em;
+    clear:both;
+}
+
+.newSelection {
+    padding-top: 30px;
+    font-size: 130%;
+}
+
+.quote {
+    text-align: justify;
+    height: auto;
+    margin:15px;
+}
