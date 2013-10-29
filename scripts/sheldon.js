@@ -9,8 +9,8 @@ rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors
 /*var userChoice = prompt("Make your choice: lizard, rock, spock, paper or scissors?").toLowerCase(); */
 
 
-// b.) Computer randomly makes a selection
-var computerChoice = function() {
+// b.) Computer randomly makes a selection - OLD VERSION 
+/* var computerChoice = function() {
     computer = Math.random();
     if (computer <= 0.2) {
         return "rock";
@@ -24,6 +24,17 @@ var computerChoice = function() {
         return "scissors";
     }
 };
+
+*/
+
+//b.) Computer makes selection 
+
+var options = ["rock", "paper", "scissors", "lizard", "spock"];
+
+var computerChoice = function() {
+    return options[Math.floor(Math.random() * options.length)];
+};
+
 
 // c.) Combinations what should happen
 
@@ -125,53 +136,21 @@ var combinations = function (choice1, choice2) {
 
 // calling the function inputing computer and user choices as inputs.
 
-
-
 var inGame = true;
 
 // Variable that stores function when user presses the button. inGame thing is used so user can't pick again once he already made his
 //selection.
-var rockPressed = function() {
-    if (!inGame) return;
-    var result = combinations(computerChoice(), "rock");
+
+var buttonPressed = function(computerChoice, userChoice) {
+    if(!inGame) return; 
+    var result = combinations(computerChoice, userChoice);
     document.getElementById("besedilo").innerHTML = result + "<br><div class='button' onClick='resetPressed()'><p>Play again!</p> </div>";
     inGame = false;
-};
+
+}
 
 var resetPressed = function() {
     document.getElementById("besedilo").innerHTML = "<div class='newSelection'> Make a new selection!</div>";
-    //tukej morem rect da zbrise jquery script ki obarva element ko je clicked.
+    //tukej morem rect da spremeni jquery script ki obarva element ko je clicked.
     inGame = true;
 };
-
-var lizardPressed = function() {
-    if (!inGame) return;
-    var result = combinations(computerChoice(), "lizard");
-    document.getElementById("besedilo").innerHTML = result + "<br> <div class='button' onClick='resetPressed()'><p>Play again!</p> </div>";
-    inGame = false;
-};
-
-var paperPressed = function() {
-    if (!inGame) return;
-    var result = combinations(computerChoice(), "paper");
-    inGame = false;
-    document.getElementById("besedilo").innerHTML = result + "<br><div class='button' onClick='resetPressed()'><p>Play again!</p> </div>";
-
-};
-
-var scissorsPressed = function() {
-    if (!inGame) return;
-    var result = combinations(computerChoice(), "scissors");
-    inGame = false;
-    document.getElementById("besedilo").innerHTML = result + "<br><div class = 'button' onClick='resetPressed()'><p>Play again!</p> </div>";
-
-};
-
-var spockPressed = function() {
-    if (!inGame) return;
-    var result = combinations(computerChoice(), "spock");
-    inGame = false;
-    document.getElementById("besedilo").innerHTML = result + "<br><div class = 'button' onClick='resetPressed()'> <p>Play again!</p> </div>";
-
- };
-
