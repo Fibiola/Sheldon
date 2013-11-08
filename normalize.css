@@ -392,6 +392,7 @@ h2 {
     border-radius: 20px;
     margin: 20px;
     background-color: #212121;
+    cursor: pointer;
 }
 
 .spockGraphics1 {
@@ -487,6 +488,7 @@ h2 {
     -moz-border-radius: 100px / 50px;
     -webkit-border-radius: 100px / 50px;
     border-radius: 30px / 55px;
+    cursor: pointer;
 }
 
 .hover {
@@ -496,6 +498,7 @@ h2 {
     color: white;
     border-radius: 20px;
     background: #55C7B7;
+    cursor: pointer;
 }
 
 .click {
@@ -537,6 +540,7 @@ html, body {
     background: black;
     text-align: center;
     margin: 10px auto;
+    cursor: pointer;
 }
 
 .button p {
@@ -582,3 +586,149 @@ html, body {
     height: auto;
     margin:15px;
 }
+
+/* the smiley face */
+div.container {
+    position: absolute;
+    height: 80px;
+    width: 30px;
+    display: block;
+    margin-left: 40px;
+    cursor: pointer;
+    text-align: left;
+}
+    
+div.container:hover div {
+  border-color: #55C7B7;
+  color: #ffffff;
+  animation: jump 0.5s infinite alternate;
+  -o-animation: jump 0.5s infinite alternate;
+  -ms-animation: jump 0.5s infinite alternate;
+  -moz-animation: jump 0.5s infinite alternate;
+  -webkit-animation: jump 0.5s infinite alternate;
+}
+
+div.container div {
+  position: absolute;
+  top: 0px;
+  left: -50;
+  right: 0;
+  height: 50px;
+  line-height: 2,7px;
+  text-align: left;
+  width: 40px;
+  border: 3px solid #ccc;
+  color: #fff;
+  padding: 0 0 8px;
+  border-radius: 50%;
+  margin-top: 80px;
+  font-size: 29px;
+  font-family: "comic sans ms";
+  font-weight: bold;
+	
+  transition: color .25s linear;
+  transition: border-color .25s linear;
+  transform: rotate(90deg);
+  animation: jump 0.5s infinite alternate;
+	
+  -o-transition: color .25s linear;
+  -o-transition: border-color .25s linear;
+  -o-transform: rotate(90deg);
+  -o-animation: jump 0.5s infinite alternate;
+	
+  -ms-transition: color .25s linear;
+  -ms-transition: border-color .25s linear;
+  -ms-transform: rotate(90deg);
+  -ms-animation: jump 0.5s infinite alternate;
+	
+  -moz-transition: color .25s linear;
+  -moz-transition: border-color .25s linear;
+  -moz-transform: rotate(90deg);
+  -moz-animation: jump 0.5s infinite alternate;
+	
+  -webkit-transition: color .25s linear;
+  -webkit-transition: border-color .25s linear;
+  -webkit-transform: rotate(90deg);
+  -webkit-animation: jump 0.5s infinite alternate;
+}
+
+div.container div.three {
+    animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -ms-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+
+@keyframes jump {
+  0% {
+		top: -40px;
+        -moz-transform: scale(1,0.7) rotate(90deg);
+  }
+  30% {-moz-transform: scale(1,1) rotate(90deg);}
+  100% {top: -70px;}
+}
+
+@-o-keyframes jump {
+  0% {
+		top: -40px;
+        -moz-transform: scale(1,0.7) rotate(90deg);
+  }
+  30% {-moz-transform: scale(1,1) rotate(90deg);}
+  100% {top: -70px;}
+}
+
+@-ms-keyframes jump {
+  0% {
+		top: -40px;
+        -moz-transform: scale(1,0.7) rotate(90deg);
+  }
+  30% {-moz-transform: scale(1,1) rotate(90deg);}
+  100% {top: -70px;}
+}
+
+@-moz-keyframes jump {
+  0% {
+		top: -40px;
+        -moz-transform: scale(1,0.7) rotate(90deg);
+  }
+  30% {-moz-transform: scale(1,1) rotate(90deg);}
+  100% {top: -70px;}
+}
+
+@-webkit-keyframes jump {
+  0% {
+      top: -40px;
+      -webkit-transform: scale(1,0.7) rotate(90deg);
+  }
+  30% {-webkit-transform: scale(1,1) rotate(90deg);}
+  100% {top: -70px;}
+}
+
+@keyframes shake {
+  0% {padding: 8px 0 0;}
+  100% {padding: 0 0 8px; line-height: 14px;}
+}
+
+@-o-keyframes shake {
+  0% {padding: 8px 0 0;}
+  100% {padding: 0 0 8px; line-height: 14px;}
+}
+
+@-ms-keyframes shake {
+  0% {padding: 8px 0 0;}
+  100% {padding: 0 0 8px; line-height: 14px;}
+}
+
+@-moz-keyframes shake {
+  0% {padding: 8px 0 0;}
+  100% {padding: 0 0 8px; line-height: 14px;}
+}
+
+@-webkit-keyframes shake {
+  0% {padding: 8px 0 0;}
+  100% {padding: 0 0 8px; line-height: 14px;}
+}
+
+
